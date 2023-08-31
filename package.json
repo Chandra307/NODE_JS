@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-guide",
+  "version": "1.0.0",
+  "description": "Node-Guide",
+  "main": "cleanupCode.js",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon cleanupCode.js",
+    "start-server": "nodemon cleanupCode.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chandra307/NODE_JS.git"
+  },
+  "author": "Ravi Chandra Kovuri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chandra307/NODE_JS/issues"
+  },
+  "homepage": "https://github.com/Chandra307/NODE_JS#readme"
+}

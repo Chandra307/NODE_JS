@@ -16,7 +16,8 @@ const reqHandler = (req, res) => {
             return res.end();
         });
     }
-            
+        
+    
     if(req.url === '/message' && req.method === 'POST'){
         const body = [];
         req.on('data', (chunk) => {
@@ -24,7 +25,8 @@ const reqHandler = (req, res) => {
         })
         return req.on('end', () => {
             const parsedBody = Buffer.concat(body).toString();
-            fs.writeFile('message.txt', parsedBody.split('=')[1], (err) => {
+            const message = parsedBody.split('=')[1]
+            fs.writeFile('message.txt', message, (err) => {
                 if(err){
                     console.log(err);
                 }
